@@ -9,3 +9,14 @@ function deleteData() {
       location.reload();
     }
   }
+  
+  // Handle giao hang
+  function handleGiaoHang() {
+    $('#flexSwitchCheckChecked').change(function () {
+      if ($(this).is(':checked')) {
+        $('.giao-hang').slideUp('slow');
+      } else {
+        $('.giao-hang').slideDown('slow');
+      }
+    });
+  }
