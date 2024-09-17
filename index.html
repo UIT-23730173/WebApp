@@ -21,7 +21,94 @@
 
 <body>
   <!-- Start your project here-->
+  <style>
+    .gradient-custom {
+      /* fallback for old browsers */
+      background: #6a11cb;
 
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    }
+  </style>
+  <section class="h-100 gradient-custom">
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center my-4">
+        <div class="col-md-8">
+          <div class="card mb-4 logo-card">
+            <img src="asset/logo.png" class="logo-img">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 nhan-vien-card">
+            <div class="card-body">
+              <h6 class="ten-nhan-vien">Nhân viên: Văn Thanh Huy</h6>
+              <img src="asset/nhan-vien.png" class="img-nhan-vien">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center my-4">
+        <div class="col-md-8">
+          <div class="card mb-4">
+            <div class="card-header py-3">
+              <h5 class="mb-0">Danh sách sản phẩm</h5>
+            </div>
+            <div class="card-body">
+              <!-- Single item -->
+              <div class="row productItem">
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                  <!-- Image -->
+                  <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp" class="w-100"
+                      alt="Blue Jeans Jacket" />
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </a>
+                  </div>
+                  <!-- Image -->
+                </div>
+
+                <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                  <!-- Data -->
+                  <p><strong class="product-name">Áo sơ mi</strong></p>
+                  <!-- Example split primary button -->
+                  <p>Màu sắc: </p>
+                  <div class="btn-group mau-sac">
+                    <input type="radio" class="btn-check" name="options-color-p1" id="option1" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option1" data-mdb-ripple-init>Trắng</label>
+
+                    <input type="radio" class="btn-check" name="options-color-p1" id="option2" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option2" data-mdb-ripple-init>Xanh</label>
+
+                    <input type="radio" class="btn-check" name="options-color-p1" id="option3" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option3" data-mdb-ripple-init>Vàng</label>
+                  </div>
+                  <!-- Example split primary button -->
+                  <p>Kích thước: </p>
+                  <div class="btn-group kich-thuoc">
+                    <input type="radio" class="btn-check" name="options-size-p1" id="option4" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option4" data-mdb-ripple-init>S</label>
+
+                    <input type="radio" class="btn-check" name="options-size-p1" id="option5" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option5" data-mdb-ripple-init>M</label>
+
+                    <input type="radio" class="btn-check" name="options-size-p1" id="option6" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option6" data-mdb-ripple-init>L</label>
+                  </div>
+                  <br>
+                  <br>
+                  <label for="customRange3" class="form-label">Giảm giá(%)</label>
+                  <div class="range" data-mdb-range-init>
+                    <input type="range" class="form-range giam-gia" min="0" max="100" step="1" id="customRange3"
+                      value="0" />
+                  </div>
+                  <!-- Data -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                   <!-- Quantity -->
                   <div class="d-flex mb-4" style="max-width: 300px">
                     <button class="btn btn-primary px-3 me-2"
@@ -40,7 +127,8 @@
                     </button>
                   </div>
                   <!-- Quantity -->
-                   <!-- Price -->
+
+                  <!-- Price -->
                   <p class="text-start text-md-center">
                     <input type="number" class="price" value="500000">
                     Đơn giá: <strong>500.000 đ</strong>
@@ -56,6 +144,8 @@
                 </div>
               </div>
               <!-- Single item -->
+              <hr class="my-4" />
+               <!-- Single item -->
               <div class="row productItem">
                 <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                   <!-- Image -->
@@ -72,7 +162,243 @@
                 <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                   <!-- Data -->
                   <p><strong class="product-name">Quần tây</strong></p>
-                  <!--Thông tin giao hàng-->
+                  <!-- Example split primary button -->
+                  <p>Màu sắc: </p>
+                  <div class="btn-group mau-sac">
+                    <input type="radio" class="btn-check" name="options-color-p2" id="option1-p2" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option1-p2" data-mdb-ripple-init>Cafe</label>
+
+                    <input type="radio" class="btn-check" name="options-color-p2" id="option2-p2" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option2-p2" data-mdb-ripple-init>Xám</label>
+
+                    <input type="radio" class="btn-check" name="options-color-p2" id="option3-p2" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option3-p2" data-mdb-ripple-init>Đen</label>
+                  </div>
+                  <!-- Example split primary button -->
+                  <p>Kích thước: </p>
+                  <div class="btn-group kich-thuoc">
+                    <input type="radio" class="btn-check" name="options-size-p2" id="option4-p2" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option4-p2" data-mdb-ripple-init>XL</label>
+
+                    <input type="radio" class="btn-check" name="options-size-p2" id="option5-p2" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option5-p2" data-mdb-ripple-init>2XL</label>
+
+                    <input type="radio" class="btn-check" name="options-size-p2" id="option6-p2" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option6-p2" data-mdb-ripple-init>3XL</label>
+
+                    <input type="radio" class="btn-check" name="options-size-p2" id="option7-p2" autocomplete="off" />
+                    <label class="btn btn-secondary" for="option7-p2" data-mdb-ripple-init>4XL</label>
+                  </div>
+                  <br>
+                  <br>
+                  <label for="customRange3" class="form-label">Giảm giá(%)</label>
+                  <div class="range" data-mdb-range-init>
+                    <input type="range" class="form-range giam-gia" min="0" max="100" step="1" id="customRange3"
+                      value="0" />
+                  </div>
+                  <!-- Data -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                  <!-- Quantity -->
+                  <div class="d-flex mb-4" style="max-width: 300px">
+                    <button class="btn btn-primary px-3 me-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      <i class="fas fa-minus"></i>
+                    </button>
+
+                    <div class="form-outline">
+                      <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control soLuong" />
+                      <label class="form-label" for="form1">Số lượng</label>
+                    </div>
+
+                    <button class="btn btn-primary px-3 ms-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <!-- Quantity -->
+
+                  <!-- Price -->
+                  <p class="text-start text-md-center">
+                    <input type="number" class="price" value="400000">
+                    Đơn giá: <strong>400.000 đ</strong>
+                  </p>
+                  <!-- Price -->
+                  <!--Them vao list-->
+                  <button type="button" class="btn btn-danger btn-sm mb-2 ghi-don" data-mdb-toggle="tooltip">Thêm vào
+                    đơn&nbsp;
+                    <i class="fas fa-pen"></i>
+                  </button>
+                  <!-- Da them thanh cong-->
+                  <p class="add-success"><i class="fas fa-check"></i>&nbsp;Đã thêm thành công!</p>
+                </div>
+              </div>
+              <!-- Single item -->
+              <hr class="my-4" />
+              <!-- Single item -->
+             <div class="row productItem">
+               <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                 <!-- Image -->
+                 <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                   <img src="asset/mu-luoi-trai.jpg" class="w-100"
+                     alt="Blue Jeans Jacket" />
+                   <a href="#!">
+                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                   </a>
+                 </div>
+                 <!-- Image -->
+               </div>
+
+               <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                 <!-- Data -->
+                 <p><strong class="product-name">Mũ lưỡi trai</strong></p>
+                 <!-- Example split primary button -->
+                 <p>Màu sắc: </p>
+                 <div class="btn-group mau-sac">
+                   <input type="radio" class="btn-check" name="options-color-p3" id="option1-p3" autocomplete="off" />
+                   <label class="btn btn-secondary" for="option1-p3" data-mdb-ripple-init>Xanh</label>
+
+                   <input type="radio" class="btn-check" name="options-color-p3" id="option2-p3" autocomplete="off" />
+                   <label class="btn btn-secondary" for="option2-p3" data-mdb-ripple-init>Trắng</label>
+                 </div>
+                 <!-- Example split primary button -->
+                 <p>Kích thước: </p>
+                 <div class="btn-group kich-thuoc">
+                   <input type="radio" class="btn-check" name="options-size-p3" id="option3-p3" autocomplete="off" />
+                   <label class="btn btn-secondary" for="option3-p3" data-mdb-ripple-init>Free size</label>
+                 </div>
+                 <br>
+                 <br>
+                 <label for="customRange3" class="form-label">Giảm giá(%)</label>
+                 <div class="range" data-mdb-range-init>
+                   <input type="range" class="form-range giam-gia" min="0" max="100" step="1" id="customRange3"
+                     value="0" />
+                 </div>
+                 <!-- Data -->
+               </div>
+
+               <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                 <!-- Quantity -->
+                 <div class="d-flex mb-4" style="max-width: 300px">
+                   <button class="btn btn-primary px-3 me-2"
+                     onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                     <i class="fas fa-minus"></i>
+                   </button>
+
+                   <div class="form-outline">
+                     <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control soLuong" />
+                     <label class="form-label" for="form1">Số lượng</label>
+                   </div>
+
+                   <button class="btn btn-primary px-3 ms-2"
+                     onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                     <i class="fas fa-plus"></i>
+                   </button>
+                 </div>
+                 <!-- Quantity -->
+
+                 <!-- Price -->
+                 <p class="text-start text-md-center">
+                   <input type="number" class="price" value="150000">
+                   Đơn giá: <strong>150.000 đ</strong>
+                 </p>
+                 <!-- Price -->
+                 <!--Them vao list-->
+                 <button type="button" class="btn btn-danger btn-sm mb-2 ghi-don" data-mdb-toggle="tooltip">Thêm vào
+                   đơn&nbsp;
+                   <i class="fas fa-pen"></i>
+                 </button>
+                 <!-- Da them thanh cong-->
+                 <p class="add-success"><i class="fas fa-check"></i>&nbsp;Đã thêm thành công!</p>
+               </div>
+             </div>
+             <!-- Single item -->
+             <hr class="my-4" />
+             <!-- Single item -->
+            <div class="row productItem">
+              <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                <!-- Image -->
+                <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                  <img src="asset/day-nit.jpg" class="w-100"
+                    alt="Blue Jeans Jacket" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                  </a>
+                </div>
+                <!-- Image -->
+              </div>
+
+              <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                <!-- Data -->
+                <p><strong class="product-name">Thắt lưng</strong></p>
+                <!-- Example split primary button -->
+                <p>Màu sắc: </p>
+                <div class="btn-group mau-sac">
+                  <input type="radio" class="btn-check" name="options-color-p3" id="option1-p4" autocomplete="off" />
+                  <label class="btn btn-secondary" for="option1-p4" data-mdb-ripple-init>Nâu</label>
+
+                  <input type="radio" class="btn-check" name="options-color-p3" id="option2-p4" autocomplete="off" />
+                  <label class="btn btn-secondary" for="option2-p4" data-mdb-ripple-init>Đen</label>
+                </div>
+                <!-- Example split primary button -->
+                <p>Kích thước: </p>
+                <div class="btn-group kich-thuoc">
+                  <input type="radio" class="btn-check" name="options-size-p3" id="option3-p4" autocomplete="off" />
+                  <label class="btn btn-secondary" for="option3-p4" data-mdb-ripple-init>110cm</label>
+
+                  <input type="radio" class="btn-check" name="options-size-p3" id="option4-p4" autocomplete="off" />
+                  <label class="btn btn-secondary" for="option4-p4" data-mdb-ripple-init>120cm</label>
+                </div>
+                <br>
+                <br>
+                <label for="customRange3" class="form-label">Giảm giá(%)</label>
+                <div class="range" data-mdb-range-init>
+                  <input type="range" class="form-range giam-gia" min="0" max="100" step="1" id="customRange3"
+                    value="0" />
+                </div>
+                <!-- Data -->
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <!-- Quantity -->
+                <div class="d-flex mb-4" style="max-width: 300px">
+                  <button class="btn btn-primary px-3 me-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                    <i class="fas fa-minus"></i>
+                  </button>
+
+                  <div class="form-outline">
+                    <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control soLuong" />
+                    <label class="form-label" for="form1">Số lượng</label>
+                  </div>
+
+                  <button class="btn btn-primary px-3 ms-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <!-- Quantity -->
+
+                <!-- Price -->
+                <p class="text-start text-md-center">
+                  <input type="number" class="price" value="300000">
+                  Đơn giá: <strong>300.000 đ</strong>
+                </p>
+                <!-- Price -->
+                <!--Them vao list-->
+                <button type="button" class="btn btn-danger btn-sm mb-2 ghi-don" data-mdb-toggle="tooltip">Thêm vào
+                  đơn&nbsp;
+                  <i class="fas fa-pen"></i>
+                </button>
+                <!-- Da them thanh cong-->
+                <p class="add-success"><i class="fas fa-check"></i>&nbsp;Đã thêm thành công!</p>
+              </div>
+            </div>
+            <!-- Single item -->
+            </div>
+          </div>
+          <!--Thông tin giao hàng-->
           <div class="card mb-4">
             <div class="card-body">
               <h5>Thông tin giao hàng</h5>
@@ -99,39 +425,141 @@
                 </div>
               </div>
             </div>
-            <div class="card mb-4 mb-lg-0">
-              <div id="pttt" class="card-body">
-                <p><strong>Phương thức thanh toán</strong></p>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                    value="option1" />
-                  <label class="form-check-label" for="inlineRadio1"><img class="me-2" width="45px"
-                      src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
-                      alt="Visa" /></label>
-                </div>
-  
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                    value="option3" />
-                  <label class="form-check-label cod" for="inlineRadio3">CASH</label>
-                </div>
-  
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                    value="option3" />
-                  <label class="form-check-label" for="inlineRadio3"><img class="me-2" width="45px"
-                      src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
-                      alt="Mastercard" /></label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                    value="option3" />
-                  <label class="form-check-label cod" for="inlineRadio3">COD</label>
+          </div>
+          <div class="card mb-4 mb-lg-0">
+            <div id="pttt" class="card-body">
+              <p><strong>Phương thức thanh toán</strong></p>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1" />
+                <label class="form-check-label" for="inlineRadio1"><img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                    alt="Visa" /></label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                  value="option3" />
+                <label class="form-check-label cod" for="inlineRadio3">CASH</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                  value="option3" />
+                <label class="form-check-label" for="inlineRadio3"><img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                    alt="Mastercard" /></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                  value="option3" />
+                <label class="form-check-label cod" for="inlineRadio3">COD</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-header py-3">
+              <h5 class="mb-0">Tiền hàng tạm tính</h5>
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                  Tiền hàng
+                  <span id="tien-hang">0 đ</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                  Giảm giá
+                  <span id="giam-gia">0 đ</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                  <div>
+                    <strong>Tổng phải trả</strong>
+                    <strong>
+                      <p class="mb-0">(Đã bao gồm VAT)</p>
+                    </strong>
+                  </div>
+                  <span><strong id="total-amount">0 đ</strong></span>
+                </li>
+              </ul>
+              <!-- Default switch -->
+              <div class="form-check form-switch toggle-cus">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                <label class="form-check-label" for="flexSwitchCheckDefault">Đã thanh toán</label>
+              </div>
+
+              <!-- Button trigger modal -->
+              <button id="xem-don-hang" type="button" data-mdb-button-init data-mdb-ripple-init
+                class="btn btn-primary btn-lg btn-block" data-mdb-modal-init data-mdb-target="#donHangModal">
+                Xem đơn hàng
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="donHangModal" tabindex="-1" aria-labelledby="donHangModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="donHangModalLabel"></h5>
+                      <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close"
+                        data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <table id="list-sp" class="table table-hover">
+                      </table>
+                      <ul class="list-group list-group-flush">
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                          Tiền hàng
+                          <span id="modal-tien-hang">0 đ</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                          Giảm giá
+                          <span id="modal-giam-gia">0 đ</span>
+                        </li>
+                        <li
+                          class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                          <div>
+                            <strong>Tổng phải trả</strong>
+                            <strong>
+                              <p class="mb-0">(Đã bao gồm VAT)</p>
+                            </strong>
+                          </div>
+                          <span><strong id="modal-total-amount">0 đ</strong></span>
+                        </li>
+                      </ul>
+                      <div id="modal-tttt"></div>
+                      <div id="modal-pttt"></div>
+                      <div id="modal-ttgh"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-secondary"
+                        data-mdb-dismiss="modal">Đóng</button>
+                      <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary print-modal">In đơn
+                        hàng</button>
+                    </div>
+                    <p class="red-notes">Sau khi in đơn hàng, toàn bộ data về đơn hàng sẽ bị xóa, ngoại trừ số đơn hàng #id.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4">
-              <div class="card-header py-3">
-                <h5 class="mb-0">Tiền hàng tạm tính</h5>
+        </div>
+      </div>
+      <!-- Start khôi phục trạng thái ban đầu-->
+      <button type="button" onclick="deleteData()" class="btn btn-light" data-mdb-ripple-init data-mdb-ripple-color="dark"><i class="fas fa-trash"></i>&nbsp;Xóa toàn bộ dữ liệu</button>
+      <!-- End khôi phục-->
+    </div>
+  </section>
+  <!-- End your project here-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+  <!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!--Huy Van customize-->
+  <script type="text/javascript" src="js/custom-jquery.js"></script>
+</body>
+
+</html>
