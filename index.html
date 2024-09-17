@@ -72,3 +72,62 @@
                 <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                   <!-- Data -->
                   <p><strong class="product-name">Quần tây</strong></p>
+                  <!--Thông tin giao hàng-->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5>Thông tin giao hàng</h5>
+              <!-- Checked switch -->
+              <div class="form-check form-switch toggle-cus">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" />
+                <label class="form-check-label" for="flexSwitchCheckChecked">Khách đã nhận hàng tại quầy</label>
+              </div><br>
+              <div id="ttgh" class="giao-hang">
+                <p><strong>Người nhận</strong></p>
+                <div class="form-outline" data-mdb-input-init>
+                  <input type="text" class="form-control" />
+                  <label class="form-label" for="form10">Văn Văn A</label>
+                </div><br>
+                <p><strong>Số điện thoại người nhận</strong></p>
+                <div class="form-outline" data-mdb-input-init>
+                  <input type="phone-number" class="form-control" />
+                  <label class="form-label" for="form10">0123456789</label>
+                </div><br>
+                <p><strong>Địa chỉ giao hàng</strong></p>
+                <div class="form-outline" data-mdb-input-init>
+                  <input type="text" class="form-control" />
+                  <label class="form-label" for="form12">Số nhà, tên đường, Quận/Huyện, Tỉnh/Thành phố</label>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4 mb-lg-0">
+              <div id="pttt" class="card-body">
+                <p><strong>Phương thức thanh toán</strong></p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1" />
+                  <label class="form-check-label" for="inlineRadio1"><img class="me-2" width="45px"
+                      src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                      alt="Visa" /></label>
+                </div>
+  
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                    value="option3" />
+                  <label class="form-check-label cod" for="inlineRadio3">CASH</label>
+                </div>
+  
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                    value="option3" />
+                  <label class="form-check-label" for="inlineRadio3"><img class="me-2" width="45px"
+                      src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                      alt="Mastercard" /></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                    value="option3" />
+                  <label class="form-check-label cod" for="inlineRadio3">COD</label>
+                </div>
+              </div>
+            </div>
+          </div>
