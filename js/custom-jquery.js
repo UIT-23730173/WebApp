@@ -14,9 +14,22 @@ function deleteData() {
   function handleGiaoHang() {
     $('#flexSwitchCheckChecked').change(function () {
       if ($(this).is(':checked')) {
-        $('.giao-hang').slideUp('slow');
+        $('.giao-hang').slideUp('500');
       } else {
         $('.giao-hang').slideDown('slow');
       }
     });
+  }
+  
+  /* Get Tong tien hang
+    Please remember that the index of object tong tien hang is always the first */
+  
+  function getTongTien() {
+    const tongTienInfo = localStorage.getItem('tongTienInfo');
+    if (tongTienInfo == null) {
+      return null;
+    }
+    else {
+      return JSON.parse(tongTienInfo);
+    }
   }
