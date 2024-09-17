@@ -1,0 +1,3 @@
+/* Huy Van is the original author of this 
+This is to handle the function effects in Mini App
+*/

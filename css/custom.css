@@ -1,0 +1,112 @@
+/*
+Author: Van Thanh Huy
+This will add additional class to custom style
+*/
+
+/*anh nhan vien*/
+.img-nhan-vien{
+    border-radius: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+}
+
+/*ten*/
+.ten-nhan-vien{
+    text-align: center;
+    color: white;
+}
+/* Lam cho background tro nen tranasparent */
+.nhan-vien-card{
+    background-color: transparent;
+    box-shadow: 0 0 0 0;
+}
+
+/*Logo*/
+.logo-card{
+    background-color: transparent;
+    box-shadow: 0 0 0 0;
+}
+
+/*Logo img*/
+.logo-img{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+}
+
+/*Solve logo responsive issue*/
+@media only screen and (min-width: 769px) {
+    .logo-img {
+      margin-left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .img-nhan-vien {
+      display: none;
+    }
+  }
+
+/*btn for drop down*/
+.mau-sac{
+    margin-bottom: 20px;
+}
+
+/* Them vao bill */
+.ghi-don{
+    float: right;
+    margin-top: 40px;
+}
+
+/*Time*/
+.time-giao{
+  cursor:pointer;
+}
+
+.cod{
+  font-weight:bolder;
+  width: 45px;
+}
+
+/*Da thanh toan*/
+
+.toggle-cus{
+  float: right;
+  margin-bottom: 25px;
+}
+
+.price{
+  display: none;
+}
+
+.modal{
+  --mdb-modal-width: 800px;
+}
+
+.key-index{
+  display: none;
+}
+
+.add-success{
+  color: green;
+  margin-top: 20px;
+  float: right;
+  display: none;
+}
+
+#modal-pttt{
+float: right;
+}
+
+#modal-tttt{
+  float: right;
+}
+
+.red-notes{
+  color: red;
+  font-style: italic;
+  text-align: center;
+}
