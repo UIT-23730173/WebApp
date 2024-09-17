@@ -4,4 +4,4 @@
 Tạo đơn hàng (chọn sản phẩm, khách hàng, tính toán giá, thông tin giao hàng,...)
 In đơn hàng (mẫu có sẵn, tùy chỉnh)
 Công nghệ:
-Jquery, html, css, js
+Jquery, html, css, js - Đây là ngôn ngữ công nghệ mà nhóm em lựa chọn để tạo ra sản phẩm
