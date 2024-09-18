@@ -197,7 +197,7 @@ function deleteData() {
       if (localStorage.getItem('1') == null) { alert("Cần thêm ít nhất 1 sản phảm vào đơn hàng"); $('#donHangModal').modal('hide'); return; }
       if (!$('#flexSwitchCheckChecked').is(':checked')) {
         var nguoiNhan = $('.giao-hang input[type="text"]').first().val();
-        var soDienThoai = $('.giao-hang input[type="tel"]').val();
+        var soDienThoai = $('.giao-hang input[type="number"]').val();
         var diaChi = $('.giao-hang input[type="text"]').last().val();
         if (nguoiNhan == "" || soDienThoai == "" || diaChi == "") {
           alert("Bạn quên nhập đầy đủ thông tin giao hàng!");
